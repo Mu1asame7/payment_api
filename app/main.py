@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api.v1 import auth, users, accounts, payments, webhook
+from app.api.v1 import auth, users, accounts, payments, webhook, admin
 
 app = FastAPI(title="Payment API")
 
@@ -8,3 +8,4 @@ app.include_router(users.router)
 app.include_router(accounts.router)
 app.include_router(payments.router)
 app.include_router(webhook.router)
+app.include_router(admin.router)
