@@ -1,0 +1,33 @@
+# Виртуальное окружение
+venv/
+env/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# База данных
+*.db
+*.sqlite
+*.sqlite3
+
+# Логи
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Alembic (версии миграций храним, кэш нет)
+alembic/__pycache__/
+alembic/versions/__pycache__/
+
+# Тесты
+.pytest_cache/
+.coverage
+
+# Docker
+*.pid
